@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <title>GabyDev</title>
+   </head>
+   <body>
+      <div class="container">
+         <main>
+            <nav>
+               <ul>
+                  <li class="navButton"><a href="#inicio">Inicio</a></li>
+                  <li class="navButton"><a href="#conocimientos">Conocimientos</a></li>
+                  <li class="navButton"><a href="#experiencia">Experiencia</a></li>
+                  <li class="navButton"><a href="#redes">Redes Sociales</a></li>
+                  <li class="navButton"><a href="#contacto">Contacto</a></li>
+               </ul>
+            </nav>
+            <header id="inicio">
+               <h1>Hola, Soy Gabriel.</h1>
+               <h3>
+                  Mi trayectoria combina una sólida formación en electrónica aplicada con una pasión por la programación
+                  autodidacta. Cuento con experiencia en el diseño e implementación de sistemas con microcontroladores y
+                  PLC, además de haber desarrollado soluciones empresariales a medida utilizando C#. Actualmente, soy
+                  estudiante de la UTN en Tecnicaturo Universitaria en Programacion 💻, a su vez me dedico a crear
+                  aplicaciones web robustas y funcionales.
+               </h3>
+               <img src="imagenPersonal.png" alt="Gabriel Developer FullStack" />
+            </header>
+         </main>
+         <hr />
+         <section id="conocimientos">
+            <header>
+               <h1>Mis Conocimientos</h1>
+               <p>
+                  Utilizo una amplia variedad de herramientas digitales para detectar y abordar necesidades. Desde la
+                  búsqueda de estrategias hasta el diseño preliminar de soluciones, me enfoco en la implementación de la
+                  parte visual y lógica de la solución, y en su despliegue y puesta en marcha. Además, cuento con
+                  habilidades blandas que me permiten trabajar en equipo de manera efectiva.
+               </p>
+            </header>
+            <article>
+               <h5>Angular</h5>
+               <p>
+                  Frametwork FrontEnd para el desarrollo de Simple Pages Aplications. Posee una compleja estructura que
+                  facilita su escalabilidad. Creado y mantenido por Google.
+               </p>
+            </article>
+            <article>
+               <h5>Nodejs</h5>
+               <p>
+                  Entorno de ejecución de JavaScript orientado a eventos asíncronos, diseñado para crear aplicaciones
+                  escalables.
+               </p>
+            </article>
+            <article>
+               <h5>Docker</h5>
+               <p>
+                  Plataforma diseñada para desplegar, correr y compartir aplicaciones modernas de manera segura y
+                  eficiente.
+               </p>
+            </article>
+         </section>
+         <section id="experiencia">
+            <header>
+               <h1>Mi Experiencia</h1>
+               <p>
+                  Tengo experiencia en el desarrollo y despliegue de páginas web, así como en la implementación de
+                  soluciones empresariales a medida para la organización de stock, recepción de proveedores y
+                  organización del trabajo industrial. He trabajado en proyectos de gran envergadura, colaborando con
+                  equipos interdisciplinarios para alcanzar los objetivos de cada proyecto.
+               </p>
+            </header>
+            <a href="https://github.com/gabrielrskm"><button>GitHub</button></a>
+            <article>
+               <img src="works/csharp.png" alt="C-Sharp" />
+               <h4>Applicacion desktop para recepcion de mercaderia</h4>
+               <p>Aplicacion de escritorio para recepcion de mercaderia para logistica de indumentaria.</p>
+            </article>
+            <article>
+               <img src="/works/html5.png" alt="HTML5" />
+               <h4>Impresion de etiquetas</h4>
+               <p>pagina web para impresion de etiquetas en hoja autoadhesiva A4</p>
+            </article>
+            <article>
+               <img src="./works/angular.png" alt="Angular" />
+               <h4>Seguimientos de ejercicios personales</h4>
+               <p>
+                  sitio web que permite registrar serie de ejercicios y visualiza a travez de graficos la evolucion del
+                  mismo(en desarrollo)
+               </p>
+            </article>
+         </section>
+
+         <footer>
+            <div id="redes">
+               <h3>Mis Redes Sociales</h3>
+               <br>
+               <div id="icons">
+                  <a href="https://www.instagram.com/gaby.aufheben/">
+                     <img src="social/instagram.png" alt="instagram" />
+                  </a>
+                  <a href="https://linkedin.com/in/gabriel-salas-a1540ba9">
+                     <img src="social/linkedin.png" alt="linkedin" />
+                  </a>
+                  <a href="https://github.com/gabrielrskm">
+                     <img src="social/github.png" alt="github" />
+                  </a>
+               </div>
+            </div>
+            <div id="contacto">
+              <h3>Contacto</h3>
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+        
+                <button type="submit">Enviar Mensaje</button>
+                
+                <div class="status-message"></div>
+            </form>
+
+
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
