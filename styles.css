@@ -102,7 +102,7 @@ main > header > h3 {
 main > header > img {
    align-self: center;
    border-radius: 2rem;
-   width: 90%;
+   width: 80%;
 }
 
 hr + section {
