@@ -61,24 +61,31 @@ section {
 nav {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: var(--primary-bgcolor);
    height: 3rem;
    position: fixed;
+   width: 100%;
    top: 0;
    left: 0;
-   width: 100%;
+   overflow-x: scroll;
+   overflow-y: hidden;
 }
 ul {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   align-items: center;
+   align-items: start;
    gap: 2rem;
 }
 ul > li {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
    font-size: medium;
+   width: 8rem;
 }
 
 main > header {
@@ -196,24 +203,24 @@ footer > * {
    align-items: center;
 }
 
-.formulario{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.formulario {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.itemForm{
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: baseline;
+.itemForm {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: baseline;
 }
 
-.itemForm > label{
-  height: 1rem;
-  width: 6rem;
-  margin-top: 1rem;
+.itemForm > label {
+   height: 1rem;
+   width: 6rem;
+   margin-top: 1rem;
 }
 
 #buttonContacto {
@@ -237,9 +244,20 @@ footer > * {
 
 @media (min-width: 570px) {
    nav {
-      margin-left: 5rem;
-      margin-right: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary-bgcolor);
+      height: 3rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      overflow-x: auto;
+      overflow-y: hidden;
    }
+
    ul {
       display: flex;
       flex-direction: row;
