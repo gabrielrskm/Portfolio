@@ -39,6 +39,7 @@ h3,
 h4,
 h5,
 h6,
+label,
 strong {
    font-family: var(--font);
    color: var(--title-color);
@@ -187,15 +188,42 @@ footer > * {
    padding-bottom: 2rem;
 }
 
-#contacto{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#contacto {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-#redes > button {
-   width: 2rem;
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.itemForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.itemForm > label{
+  height: 1rem;
+  width: 6rem;
+  margin-top: 1rem;
+}
+
+#buttonContacto {
+  margin-top: 2rem;
+   width: 7rem;
+   height: 3rem;
+   font-size: 1em;
+   border-radius: 3rem;
+   border-width: 0ch;
+   background-color: var(--button-bgcolor);
+   color: var(--primary-bgcolor);
 }
 
 #icons {
