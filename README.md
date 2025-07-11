@@ -1,1 +1,1 @@
-Landing Page inspirate in holajuniors challenge 
+Landing Page 
